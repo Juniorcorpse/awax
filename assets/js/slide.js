@@ -1,3 +1,5 @@
+/* js não esta em uso */
+
 document.addEventListener('DOMContentLoaded', function() {
     var stream = document.querySelector('.gallery__stream');
     var items = document.querySelectorAll('.gallery__item');

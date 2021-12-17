@@ -1,0 +1,86 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* global 
+img {
+  width: 100%;
+}
+
+h1 {
+  margin: 0.5rem 0;
+} */
+
+/* container and cards */
+.container {
+  position: relative;
+  width: 1050px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: grab;
+  z-index: 0.5;
+  /* border-top: 10px solid #f00; */
+}
+
+.cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 300px);
+  grid-gap: 20px;
+  /* padding:35px 20px ; */
+  pointer-events:none;
+  z-index: 0.5;
+  /* border-bottom: 10px solid #00f; */
+}
+
+.card {
+  /* border: 1px solid #ccc; */
+  border-bottom: 4px solid #B28756;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #1a18189f;
+  box-shadow: 0px 5px 20px 0px rgba(86, 82, 134, 0.1);
+  z-index: 80
+}
+.team--avatar {
+  width:150px;
+  height:auto;
+  margin-top: 20px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  color: #B28756;
+  padding: 1rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index: 80;
+}
+
+.card__content div, .card__content a{
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+
+  pointer-events: visibleFill;
+}

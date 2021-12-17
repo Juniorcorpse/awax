@@ -2,7 +2,7 @@ let totalSlides = document.querySelectorAll('.section-team .slide').length;
  document.querySelector('.section-team .sliders').style.width = 
  `calc(100vw * ${totalSlides})`;
  
- let currentSlide = 0;
+let currentSlide = 0;
 let areaheigth = document.querySelector('.section-team').clientHeight;
 let areawidth = document.querySelector('.section-team .slide').clientWidth;
 
@@ -26,6 +26,7 @@ function goNext(){
 
 function updateMargin(){     
     let newMargin = (currentSlide * areawidth);
+    
     document.querySelector('.section-team .sliders').style.marginLeft = `-${newMargin}px`;
 }
 

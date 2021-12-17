@@ -5,7 +5,9 @@
     <title>Awax</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styleS.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    
     <!--<link rel="stylesheet" type="text/css" href="assets/css/slider.css" /> -->
 </head>
 <body>
@@ -243,14 +245,14 @@
         <div class="section-team-area">
             <div class="section-title">Our Team</div>
             <div class="section-desc">Our Co-Workers</div>
-            <div class="section-body">
-                <div class="section-team">
+            <div class="section-body position-r slider-container">
+                <div class="section-team ">
                     <div class="slider--controls">
                         <div class="slider--control" onclick="goPrev()">voltar</div>
                         <div class="slider--control" onclick="goNext()">porximo</div>
                     </div>
-                    <div class="sliders" >                        
-                        <div class="slide">
+                    <div class="sliders slider position-r" >                        
+                        <div class="slide  slider-innerbox position-r">
                             <div class="slidearea radius">
                                 <img class="section-team--avatar" src="media/mulher1.png" />
                                 <div class="section-team--name">Jane Doe</div>
@@ -263,8 +265,8 @@
                                         <a href=""><img src="assets/images/twitter.png" /></a>
                                 </div>
                             </div>
-                        </div><div class="slide">
-                            <div class="slidearea radius">
+                        </div><div class="slide slider-innerbox position-r">
+                            <div class="slidearea radius ">
                                 <img class="section-team--avatar" src="media/homem1.png" />
                                 <div class="section-team--name">Mike Chiller</div>
                                 <div class="section-team--role">Creative Head</div>
@@ -276,7 +278,7 @@
                                         <a href=""><img src="assets/images/twitter.png" /></a>
                                 </div>
                             </div>
-                        </div><div class="slide">
+                        </div><div class="slide slider-innerbox position-r">
                             <div class="slidearea radius">
                                 <img class="section-team--avatar" src="media/mulher2.png" />
                                 <div class="section-team--name">Anna Jhons</div>
@@ -289,7 +291,8 @@
                                         <a href=""><img src="assets/images/twitter.png" /></a>
                                 </div>
                             </div>
-                        </div><div class="slide">
+                        </div>
+                        <div class="slide slider-innerbox  position-r">
                             <div class="slidearea radius">
                                 <img class="section-team--avatar" src="media/mulher1.png" />
                                 <div class="section-team--name">silid 4</div>
@@ -312,49 +315,97 @@
                 </div>
             </div>
         </div>
-    </section >
-    <!-- 
+    </section >   
+    
     <section class="default dark bg-team">
-        <div class="section-team-area">
+    <div class="section-team-area">
             <div class="section-title">Our Team</div>
             <div class="section-desc">Our Co-Workers</div>
-            <div class="section-body">
-                <div class="section-team">
-                    <div class="gallery">
-                        <div class="gallery__prev"></div>
-                        <div class="gallery__next"></div>
-                        <div class="gallery__stream">
-                            
-                          <div class="gallery__item bg-1">
-                            <div class="section-title">Happy Clients</div>
-                            <div class="section-desc">Client Reviews</div>
-                            <img class="section-testimonials--avatar" src="media/homem2.png" />
-                          </div>
-                          <div class="gallery__item bg-2"></div>
-                          <div class="gallery__item bg-3"></div>
-                          <div class="gallery__item bg-4"></div>
-                          <div class="gallery__item bg-5"></div>
-                          <div class="gallery__item bg-6"></div>
-                          <div class="gallery__item bg-7"></div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="sliders-pointers">
-                    <div class="pointer active"></div>
-                    <div class="pointer"></div>
-                    <div class="pointer"></div>
-                </div>
+    <div class="container">
+        <div class="cards">
+          <div class="card ">
+            <img class="team--avatar" src="" alt="" />
+            <div class="card__content">
+                <div class="section-team--name">Name 4</div>
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                voluptatibus!
+              </p>
+              
+              
+              <a href="#" class="button">ver mais</a>
+            
             </div>
+          </div>
+          <!-- slider funcional -->
+          <div class="card">
+            <img class="team--avatar" src="media/homem2.png" alt="" />
+            <div class="card__content">
+                <div class="section-team--name">Name</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                voluptatibus!
+              </p>
+              <a href="#" class="button">ver mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="team--avatar" src="media/mulher2.png" alt="" />
+            <div class="card__content">
+                <div class="section-team--name">Name</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                voluptatibus!
+              </p>
+              <a href="#" class="button">ver mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="team--avatar" src="media/homem1.png" alt="" />
+            <div class="card__content">
+                <div class="section-team--name">Name</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                voluptatibus!
+              </p>
+              <a class="button">ver mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="team--avatar" src="media/mulher1.png" alt="" />
+            <div class="card__content">
+                <div class="section-team--name">Name</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                voluptatibus!
+              </p>
+              <a class="button">ver mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="team--avatar" src="" alt="" />
+            <div class="card__content">
+                <div class="section-team--name">Name</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                voluptatibus!
+              </p>
+              <a class="button">ver mais</a>
+            </div>
+          </div>
         </div>
-    </section >-->
-
+      </div>
+    </div>
+    </section>
+     <!-- slider funcional fim -->
     <section class="default light testimonials">
         <div class="section-title">Happy Clients</div>
         <div class="section-desc">Client Reviews</div>
         <div class="section-body">
-            <div class="section-testimonials">
-                <div class="sliders" style="margin-left:0;">
+            <div class="section-testimonials ">
+                <div class="sliders " >
+                    
                     <div class="slide">
                         <div class="slidearea">
                             <img class="section-testimonials--avatar" src="media/homem2.png" />
@@ -363,7 +414,8 @@
                             <img class="section-testimonials--quoteimg" src="assets/images/quote.png" />
                             <div class="section-testimonials--quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros vitae erat condimentum viverra a nec lacus. Maecenas eros lectus, rhoncus vel dictum vel, dignissim eget ligula. Vestibulum id tempus quam, sed pellentesque quam.</div>
                         </div>
-                    </div><div class="slide">
+                    </div>
+                    <div class="slide">
                         <div class="slidearea">
                             <img class="section-testimonials--avatar" src="media/homem2.png" />
                             <div class="section-testimonials--name">John Doe</div>
@@ -670,7 +722,9 @@
         </div>
     </div>
 </footer>
-<script src="assets/js/script.js"></script>
-<!-- <script src="assets/js/slide.js"></script> -->
+ <script src="assets/js/slide_2.js"></script>
+ <script src="assets/js/scriptS.js"></script>
+<!--<script src="assets/js/slide.js"></script> 
+<script src="assets/js/script.js"></script>-->
 </body>
 </html>

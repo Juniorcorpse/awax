@@ -73,6 +73,7 @@ header {
     padding:10px 30px;
     margin-top:30px;
     border-radius:20px;
+    z-index: 99;
 }
 .button--dark {
     background-color:#000;
@@ -366,7 +367,7 @@ CSS DE ÁREAS ESPECÍFICAS
 
 
 .bg-team {
-    /*background-image:url('../images/bg.jpg');*/
+    background-image:url('../images/bg.jpg');
     background-size:cover;
     background-position:center;
     padding:0;
@@ -384,24 +385,6 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-team .sliders {
     width:1000vw;
     height:100%;
-    transition: all ease 0.3s;
-}
-.slider--controls{
-    position: absolute;
-    z-index: 99;
-    width: 65%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #b71c29;
-}
-.slider--control{
-    width: 50px;
-    height: 50px;
-    background-color: #999;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
 }
 .section-team .slide {
     width:280px;
